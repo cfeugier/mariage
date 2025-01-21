@@ -1,2 +1,2 @@
 # mariage
-A simple way to manage your wedding's invitee
+A simple way to manage your wedding's guests
