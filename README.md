@@ -1,2 +1,2 @@
-# wedding
-A simple way to manage your mariage's guests.
+# mariage
+A simple way to manage your mariage's invitee
