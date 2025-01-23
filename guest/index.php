@@ -15,7 +15,7 @@ if (isset($_GET['idFamily'])) {
     $stmt = $pdo->prepare('SELECT idFamily, meal, name, mail FROM family WHERE idFamily = :idFamily');
     $stmt->execute(['idFamily' => $idFamily]);
     $family = $stmt->fetch(PDO::FETCH_ASSOC);
-    $stmt = $pdo->prepare('SELECT id,name,firstname,age,meal,diet,allergies,sleeps,brunch,come FROM mariage WHERE idFamily = :idFamily');
+    $stmt = $pdo->prepare('SELECT id,name,firstname,age,meal,diet,allergies,sleeps,brunch,come FROM wedding WHERE idFamily = :idFamily');
     $stmt->execute(['idFamily' => $idFamily]);
     $families = $stmt->fetchAll(PDO::FETCH_ASSOC);
 

@@ -2,7 +2,7 @@
 include 'config.php';
 
 
-$requetes = "DELETE FROM `mariage` WHERE `id`=".$_GET['id'].";";
+$requetes = "DELETE FROM `wedding` WHERE `id`=".$_GET['id'].";";
 if ($requetes !== ''){
     $stmt = $pdo->prepare($requetes);
     $stmt->execute();

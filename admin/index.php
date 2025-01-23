@@ -36,7 +36,7 @@ function whatIsRegime($value){
     }
 }
 
-$stmt = $pdo->prepare('SELECT id, idFamily, meal, name, firstname, come, age, diet, allergies, sleeps, brunch FROM mariage');
+$stmt = $pdo->prepare('SELECT id, idFamily, meal, name, firstname, come, age, diet, allergies, sleeps, brunch FROM wedding');
 $stmt->execute();
 $families = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>

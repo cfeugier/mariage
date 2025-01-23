@@ -17,7 +17,7 @@ $stmt->execute(['idFamily' => $idFamily]);
 $mailAndMeal = $stmt->fetch(PDO::FETCH_ASSOC);
 $meal = $mailAndMeal['meal'];
 $mail = $mailAndMeal['mail'];
-$stmt = $pdo->prepare('SELECT id FROM mariage WHERE idFamily = :idFamily');
+$stmt = $pdo->prepare('SELECT id FROM wedding WHERE idFamily = :idFamily');
 $stmt->execute(['idFamily' => $idFamily]);
 $idOld = flatten($stmt->fetchAll(PDO::FETCH_ASSOC));
 

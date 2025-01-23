@@ -14,7 +14,7 @@ function whatIs($value){
     }
 }
 
-$stmt = $pdo->prepare('SELECT idFamily, meal, name, mail FROM famille ORDER BY idFamily');
+$stmt = $pdo->prepare('SELECT idFamily, meal, name, mail FROM family ORDER BY idFamily');
 $stmt->execute();
 $families = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
