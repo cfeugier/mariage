@@ -1,0 +1,102 @@
+/*
+ * Base structure
+ */
+
+ @font-face {
+    font-family: 'angella';
+    src: url('877121ad-21c3-4236-b672-e201ebea7a2e.otf');
+  }
+  
+  @media (min-width:1400px){
+    #background{
+        background-size: 50%;
+    }
+    .cormorand{
+      font-size: 20px;
+    }
+  }
+  
+   @media (max-width:1400px) and (min-width:1200px){
+    #background{
+        background-size: 60%;
+    }
+    .cormorand{
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width:1200px) and (min-width:992px){
+    #background{
+        background-size: 70%;
+    }
+    .cormorand{
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width:992px) and (min-width:576px){
+    #background{
+        background-size: 80%;
+    }
+    .cormorand{
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width:576px){
+    #background {
+      background-size: 100%;
+    }
+    .cormorand{
+      font-size: 10px;
+    }
+  }
+  
+  #background {
+    background-image: url("tacherose.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+  }
+  
+  body {
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url("noisemini.png");
+    background-attachment: fixed;
+    font-family: "Cormorant Garamond", serif;
+  }
+  
+  .angella {
+    font-family: "angella", serif;
+    font-size: 100px;
+  }
+  
+  #buttonToggle {
+    position: absolute;
+    height: fit-content;
+    right: 10px;
+    border-color: #6c757d;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 7px;
+    top: 10px;
+    
+  }
+  
+  #buttonToggle .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(108, 117, 125, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+  }
+  
+  #buttonClose {
+    padding: 13px;
+    background-color: white;
+    border: #6c757d;
+    opacity: 1;
+    border-style: solid;
+    border-width: 1px;
+    color: #6c757d;
+    --bs-btn-close-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236c757d'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.416z'/></svg>");
+  }
